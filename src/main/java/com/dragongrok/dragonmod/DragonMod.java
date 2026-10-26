@@ -1,5 +1,6 @@
 package com.dragongrok.dragonmod;
 
+import com.dragongrok.dragonmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,6 +12,9 @@ public class DragonMod implements ModInitializer {
     @Override
     public void onInitialize() {
         LOGGER.info("Rrrrr... Dragon Mod loaded! The skies now belong to us.");
-        // TODO: Register entities, items, blocks, etc.
+
+        ModItems.registerModItems();
+
+        // TODO: Register entities (DragonEntity), blocks, sounds, etc.
     }
 }
